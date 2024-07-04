@@ -18,7 +18,7 @@ in `11-Elevator` Challenge, You Should Try To find a Way to Go to Top of the Bui
 
 <br>
 
-I made a little change `Elevator` Contract Which is, i Changed Interface Name from `Building` to `IBuilding`.
+I made a little change `Elevator` Contract Which Just Changed Interface Name from `Building` to `IBuilding`.
 
 So Now Looks Like This:
 
