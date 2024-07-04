@@ -99,7 +99,6 @@ Attacker Can Use Similar Contract Like This In Order to Go Top Of the Building S
         if (_floor != lastFloor) {
             isLastFloorBoolean = false;
         } else if (_floor == 10) {
-
             if (isFirstCall) {
                 isFirstCall = false;
                 return false;
@@ -107,7 +106,6 @@ Attacker Can Use Similar Contract Like This In Order to Go Top Of the Building S
             } else if (!isFirstCall) {
                 isFirstCall = true;
                 return true;
-
             }
         }
     }
