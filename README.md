@@ -77,7 +77,7 @@ So it looks Like this:
     }
 ```
 
-Attacker Can Use Similar Contract Like This In Order to Go Top Of the Building Successfully:
+Attacker Can Use Similar Contract Like This In Order to Go Top Of the Building Successfully: (lets say the Last Floor of the Building is `10`)
 
 ```javascript
     contract Building is IBuilding {
