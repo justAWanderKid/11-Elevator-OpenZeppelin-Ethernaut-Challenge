@@ -116,7 +116,7 @@ Attacker Can Use Similar Contract Like This In Order to Go Top Of the Building S
 Here's the Test i Wrote inside the `Elevator.t.sol` Which You Can Run to Exploit the `Elevator` Contract:
 
 ```javascript
-        function testElevatorIsWorkingCorrectly() external {
+    function testElevatorIsWorkingCorrectly() external {
         Building building = new Building(elevator);
         
         console.log("The Last Floor in this Building is 10.");
