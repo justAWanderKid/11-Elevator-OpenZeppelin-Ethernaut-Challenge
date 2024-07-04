@@ -23,6 +23,10 @@ I made a little change `Elevator` Contract Which Just Changed Interface Name fro
 So Now Looks Like This:
 
 ```javascript
+    interface IBuilding {
+        function isLastFloor(uint256) external returns (bool);
+    }
+
     contract Elevator {
         bool public top;
         uint256 public floor;
