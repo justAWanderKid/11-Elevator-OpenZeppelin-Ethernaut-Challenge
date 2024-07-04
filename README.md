@@ -95,6 +95,9 @@ Attacker Can Use Similar Contract Like This In Order to Go Top Of the Building S
     }
 
     function isLastFloor(uint256 _floor) external returns (bool isLastFloorBoolean) {
+        if (_floor > lastFloor) {
+            revert("This Building Only Has 10 Floors");
+        }
 
         if (_floor != lastFloor) {
             isLastFloorBoolean = false;
