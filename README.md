@@ -8,7 +8,7 @@ OpenZeppelin Ethernaut Website: [ethernaut.openzeppelin.com](ethernaut.openzeppe
 
 # What You're Supposed to Do?
 
-in `11-Elevator` Challenge, You Should Try To find a Way to Go to Top of the Building Successfully.
+in `11-Elevator` Challenge, You Should Try To find a Way to Go to Top of the Building Successfully Using the Elevator.
 
 `11-Elevator` Challenge Link: [https://ethernaut.openzeppelin.com/level/0x6DcE47e94Fa22F8E2d8A7FDf538602B1F86aBFd2](https://ethernaut.openzeppelin.com/level/0x6DcE47e94Fa22F8E2d8A7FDf538602B1F86aBFd2)
 
